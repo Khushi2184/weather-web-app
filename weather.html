@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="weather-dashboard">
+        <h1>🌤️ Weather Dashboard 🌧️</h1>
+        <div id="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name" aria-label="City name">
+            <button id="search-button" aria-label="Search">🔍 Search</button>
+            <button id="current-location-button" aria-label="Current Location">📍 Current Location</button>
+        </div>
+        <div id="weather-info"></div>
+        <div id="summary-info"></div>
+        <div id="hourly-info"></div>
+        <div id="forecast-info"></div>
+        <div id="monthly-forecast-info"></div>
+        <div id="weather-trends-info"></div>
+        <div id="additional-info"></div>
+        <div id="historical-info"></div>
+        <div id="weather-icons">
+            <h3>Weather Icons</h3>
+            <i class="fas fa-sun" title="Clear Sky"></i>
+            <i class="fas fa-cloud" title="Cloudy"></i>
+            <i class="fas fa-wind" title="Windy"></i>
+            <i class="fas fa-cloud-showers-heavy" title="Rain"></i>
+            <i class="fas fa-bolt" title="Thunderstorm"></i>
+            <i class="fas fa-snowflake" title="Snow"></i>
+            <i class="fas fa-tachometer-alt" title="Pressure"></i>
+            <i class="fas fa-temperature-high" title="Temperature"></i>
+            <i class="fas fa-moon" title="Moon Phase"></i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

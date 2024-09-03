@@ -1,0 +1,432 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Headers and Titles */
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Container for General Layout */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Blog Post Layout */
+#blog-post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#blog-post header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#blog-post .date {
+    color: #666;
+}
+
+#blog-post .author a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog-post .author a:hover {
+    text-decoration: underline;
+}
+
+#blog-post blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Blog Post Comments Section */
+#comments {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comment:last-of-type {
+    border-bottom: none;
+}
+
+.comment button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment button:hover {
+    background: #0056b3;
+}
+
+#comment-form {
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+#comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#comment-form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+    background: #0056b3;
+}
+
+/* Portfolio Introduction */
+#introduction {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#introduction .contact-info {
+    margin-top: 20px;
+}
+
+#introduction .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#introduction .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio About Me */
+#about-me {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Contact Form */
+#contact {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background: #0056b3;
+}
+
+#contact .contact-details p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact .contact-details p a:hover {
+    text-decoration: underline;
+}
+
+/* Event Website Hero Section */
+#hero {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#hero .btn-primary {
+    background: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    background: #f1f1f1;
+    color: #0056b3;
+}
+
+#hero .btn-secondary {
+    background: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hero .btn-secondary:hover {
+    background: #f1f1f1;
+    color: #0056b3;
+}
+
+#hero .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Event Website Schedule */
+#schedule {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#schedule ul {
+    list-style: none;
+    padding: 0;
+}
+
+#schedule li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+#schedule li:last-of-type {
+    border-bottom: none;
+}
+
+#schedule a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#schedule a:hover {
+    text-decoration: underline;
+}
+
+/* Event Website Speaker Profiles */
+#speakers {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.speaker-profile {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.speaker-profile:last-of-type {
+    border-bottom: none;
+}
+
+.speaker-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.speaker-profile img:hover {
+    transform: scale(1.1);
+}
+
+.speaker-profile a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.speaker-profile a:hover {
+    text-decoration: underline;
+}
+
+/* Event Website Registration Form */
+#registration {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#registration form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration label {
+    margin-bottom: 5px;
+}
+
+#registration input, #registration select, #registration textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#registration button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registration button:hover {
+    background: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #about-me img {
+        width: 120px;
+    }
+
+    #hero .btn-primary, #hero .btn-secondary {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
